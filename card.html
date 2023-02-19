@@ -311,14 +311,13 @@
             </li>
         </ul>
     </div>
-    <audio src="..\music\ikson.mp3"></audio>
+    <audio src="ikson.mp3"></audio>
     <script>
         var h1 = document.getElementById("h1");
         var song = document.querySelector("audio");
 
         h1.onclick = e => {
             document.querySelector("html").requestFullscreen();
-            new Audio('chess/game-start.mp3').play();
             song.play();
             song.loop = true;
             document.querySelector(".wrapper").style.transition = 0.4 + "s";
